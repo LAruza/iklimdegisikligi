@@ -2,11 +2,8 @@ import discord
 import random
 import os
 
-# ayricaliklar (intents) değişkeni botun ayrıcalıklarını depolayacak
 intents = discord.Intents.default()
-# Mesajları okuma ayrıcalığını etkinleştirelim
 intents.message_content = True
-# client (istemci) değişkeniyle bir bot oluşturalım ve ayrıcalıkları ona aktaralım
 client = discord.Client(intents=intents)
 
 @client.event
@@ -32,4 +29,4 @@ async def on_message(message):
             picture = discord.File(f)
         await message.channel.send(file=picture)
 
-client.run("MTIyNjE4NzAwODM0NzczODE0NQ.G3KS7n.fNh2ieavYceSKTvLFM_suWC4A910QcaaECLq5U")
+client.run("insert token here")
