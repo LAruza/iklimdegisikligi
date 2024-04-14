@@ -14,18 +14,18 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content.startswith('Selam'):
-        await message.channel.send("Merhabalar! Ben iklim! iklim değişikliği hakkında bilgi veren bir robotum nasıl yardımcı olabilirim? ($help yazarak komutlara bakabilirsiniz :D)")
-    elif message.content.startswith('$help'):
-        await message.channel.send("$iklimfoto = iklim değişikliği ile ilgili fotoğraf $yapımcı = yapan kişi hakkında bilgi verir $iklimbilgi")
-    elif message.content.startswith('$yapımcı'):
-        await message.channel.send("Yapan kişi mamayda")
-    elif message.content.startswith('$foto'):
+    if message.content.startswith('Codename'):
+        await message.channel.send("Response")
+    elif message.content.startswith('Codename'):
+        await message.channel.send("response")
+    elif message.content.startswith('codename'):
+        await message.channel.send("respone")
+    elif message.content.startswith('codetosendphoto'):
         
-        dizi = os.listdir("iklimfoto")
-        dosyaadi =random.choice(dizi)
-        print(dosyaadi,"****")
-        with open(f'iklimfoto/{dosyaadi}', 'rb') as f:
+        dizi = os.listdir("foldername")
+        filemaöe =random.choice(dizi)
+        print(filename,"****")
+        with open(f'foldername/{filename}', 'rb') as f:
             picture = discord.File(f)
         await message.channel.send(file=picture)
 
