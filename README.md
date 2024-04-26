@@ -205,4 +205,3 @@ veri epic
 
 
 
-burda nabıyorsun?
