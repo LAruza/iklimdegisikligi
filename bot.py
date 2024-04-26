@@ -20,8 +20,10 @@ async def on_message(message):
         await message.channel.send("response")
     elif message.content.startswith('codename'):
         await message.channel.send("respone")
+    elif message.content.startswith('mew'):
+        await message.channel.send("https://tenor.com/view/cat-silly-silly-cat-silly-cats-mewing-gif-14812443053695024113")
+    #must add this btw
     elif message.content.startswith('codetosendphoto'):
-        
         dizi = os.listdir("foldername")
         filemaöe =random.choice(dizi)
         print(filename,"****")
